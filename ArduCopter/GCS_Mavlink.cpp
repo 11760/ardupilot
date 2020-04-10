@@ -44,6 +44,7 @@ MAV_MODE GCS_MAVLINK_Copter::base_mode() const
     case LOITER:
     case AVOID_ADSB:
     case FOLLOW:
+    case DRAWSTAR:
     case GUIDED:
     case CIRCLE:
     case POSHOLD:
