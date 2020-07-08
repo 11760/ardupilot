@@ -856,7 +856,7 @@ protected:
     const char *name4() const override { return "DRAWSTAR"; }
 
 private:
-    Vector3f path[10];
+    Vector3f path[20];
     int path_num;
 
     void generate_path();

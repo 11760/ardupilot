@@ -827,7 +827,7 @@ group_sim.add_option("-M", "--mavlink-gimbal",
                      default=False,
                      help="enable MAVLink gimbal")
 group_sim.add_option("-L", "--location", type='string',
-                     default='CMAC',
+                     default='WUHAN',
                      help="use start location from "
                      "Tools/autotest/locations.txt")
 group_sim.add_option("-l", "--custom-location",

@@ -23,15 +23,14 @@ bool Copter::ModeDrawStar::init(bool ignore_checks)
 
 void Copter::ModeDrawStar::generate_path()
 {
-    float radius_cm = 1000.0;
+    float radius_cm = 500.0;
 
     wp_nav->get_wp_stopping_point(path[0]);
-    path[1] = path[0] + Vector3f(1.0f,0,0)*radius_cm;
-    path[2] = path[0] + Vector3f(1.0f,-1.0f,0)*radius_cm;
-    path[3] = path[0] + Vector3f(-1.0f,-1.0f,0)*radius_cm;
-    path[4] = path[0] + Vector3f(-1.0f,1.0f,0)*radius_cm;
-    path[5] = path[0] + Vector3f(1.0f,1.0f,0)*radius_cm;
-    path[6] = path[1];
+    path[1] = path[0] + Vector3f(3.0f,-3.0f,0)*radius_cm;
+    path[2] = path[1] + Vector3f(1.0f,0,0)*radius_cm;
+    path[3] = path[2] + Vector3f(0,-1.0f,0)*radius_cm;
+    path[4] = path[3] + Vector3f(14.0f,-14.0f,0)*radius_cm;
+    path[5] = path[0];
 }
 
 // initialise guided mode's position controller
